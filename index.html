@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portifolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--This is the header where the menu is-->
+    <header>
+        <nav id="header-nav">
+            <ul class="menu">
+
+                <a href="#background-container"><img id="logo" src="img/logosite.png" onclick="type()" alt="Logo"></a>
+                <li><a href="#aboutme">ABOUT</a></li>
+                <li><a href="#myexperience">MY EXPERIENCE</a></li>
+                <li><a href="#myprojects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!--This is the background with presentation text using js-->
+    <div id="background-container">
+        <img id="background" src="img/background.avif" alt="Imagem">
+        <h1 id="txt"></h1>
+    </div>
+
+
+    <button class="theme" onclick="changeColor()">Click here to change theme</button>
+
+    <!--This is the list of the software skills in line on the html page-->
+    <div class="skills">
+        <img class="skill" src="img/html.png" alt="Imagem 1">
+        <img class="skill" src="img/css.png" alt="Imagem 1">
+        <img class="skill" src="img/js.png" alt="Imagem 1">
+        <img class="skill" src="img/react.png" alt="Imagem 1">
+        <img class="skill" src="img/java.png" alt="Imagem 1">
+        <img class="skill" src="img/mongodb.png" alt="Imagem 1">
+        <img class="skill" src="img/mysql.png" alt="Imagem 1">
+    </div>
+
+    <!--Article where I will store all information related to me-->
+    <article>
+
+        <!--This is the about me with photo-->
+        <div id="aboutme">
+            <div class="profile-container"><img id="profile" src="img/profile.png" alt="Imagem"></div>
+            <div class="profile-container">
+
+                <h1>About me</h1>
+
+                <p>My name is Lucas Albuquerque Ramos, I'm 27 years old and I've been living in Ireland for the last 3
+                    years.
+
+                    I'm a currently student level 8 in BSc degree in IT & Computer Science at CCT College Dublin.
+
+                    An energetic, versatile and professional Developer who is able to work alongside other talented IT
+                    professionals. A technology enthusiast with a commitment in developing innovative and creative
+                    software solutions.
+
+                    I`m actively working on personal projects and looking for an Software Development position with a
+                    fast-paced and ambitious company that can offer development training, project and based learning.
+
+                    I have knowledge on HTML, CSS, Java Script, Java, Python, Salesforce, Splunk, API, Google Cloud,
+                    MySQL, MongoDB.
+                </p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="myexperience">
+
+            <div class="experience-container">
+
+                <h1>My experience</h1>
+
+                <p>I started my carrer in the engineering area and I worked 3 years in a multinational company in
+                    Brazil.
+
+                    After a few years living in Ireland, I decided to migrate to the IT area and I'm very excited to the
+                    challenges ahead. I would love to get an opportunity and bring all the achieved knowledge and
+                    experience from
+                    engineering
+                    developments to this new working environment.
+
+                    Recently I had the opportunity to start in the area as Global Technical Support at Paypal, where I
+                    worked
+                    directly with the PayPal/Braintree team from Chicago(EUA), supporting merchants and developers all
+                    over
+                    the
+                    world with all possible technical issues related to their integration, accounts, transactions,
+                    refunds,
+                    API's,
+                    systems, and any other issues or questions related to PayPal/Braintree workflow.
+                </p>
+
+            </div>
+
+            <div class="experience-container"><img id="imagem-container" src="img/dev5.avif" alt="Imagem"></div>
+
+        </div>
+
+
+
+
+
+
+
+        <!--Where I insert all my projects-->
+        <div id="myprojects">
+            <h1>My Projects</h1>
+            <a href="https://github.com/lucasaaramos/UltraEmogiCombate" target="_blank"><img class="square"
+                    src="img/job1.PNG" alt="square1"></a>
+            <a href="https://github.com/lucasaaramos/Cadastro-de-Eventos" target="_blank"><img class="square"
+                    src="img/job2.PNG" alt="square2"></a>
+            <a href="https://github.com/lucasaaramos/RentACar" target="_blank"><img class="square" src="img/job3.PNG"
+                    alt="square3"></a>
+            <a href="https://github.com/lucasaaramos/RemoteControl" target="_blank"><img class="square"
+                    src="img/job4.PNG" alt="square4"></a>
+        </div>
+
+
+
+        <!--Form to contact -->
+        <div id="contact">
+            <h1>Contact</h1>
+            <form id="contact-form" action="https://formsubmit.co/lucasalbuquerque5412@gmail.com" method="POST">
+                <label class="form" for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+
+                <label class="form" for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+
+                <label class="form" for="message"><strong>Message</strong></label>
+                <textarea name="message" id="message" placeholder="Escreva aqui sua mensagem"></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://lucasaaramos.github.io/englishCourse-website/#">
+
+                <button id="input-btn" type="submit">Send</button>
+            </form>
+        </div>
+
+    </article>
+
+    <footer id="footer-container">
+        <a href="https://github.com/lucasaaramos" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-albuquerque-ramos/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/lucas.albuquerque.3781" target="_blank">
+            <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/lucas_albuquerquue/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+
+        <div class="line"></div>
+
+        <p>Design by Lucas Albuquerque</p>
+        <p>Dublin - Ireland | All Rights Reserved 2023</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
